@@ -8,7 +8,8 @@ public class SameOuterClass {
 	private int id = 101;
 	public static void main(String[] args) {
 		System.out.println("In main method: SameOuterClass");
-
+		//SameOuterClass (scenario)
+		//Calling Of inner class object in same Outer class By creation Outer class Object is Linked with inner Object
 		TestClass5 tc5 = new SameOuterClass().new TestClass5(); 
 		tc5.sub();
 		
@@ -24,7 +25,7 @@ public class SameOuterClass {
 			System.out.println(id);
 		}
 		//object creation 
-		//No restruction of object creation of Inner class with in the Inner class
+		//No restriction of object creation of Inner class with in the Inner class
 		//We can Keep object inside the method 
 		public void add() {
 			TestClass4 tc4 = new TestClass4();

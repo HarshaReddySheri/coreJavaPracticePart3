@@ -16,6 +16,26 @@ public class Agenda3ObjectCreation {
 		tc.show();
 		
 	}
+	
+	//Object creation
+	//***************
+	
+	/* 
+	 * How to create object of InnerClass in OuterClass main method?
+	 * 
+	 *  Inside Main Method
+	 *  ******************
+	 *  type1--> TestClass1 tc1 = new TestClass1();
+	 *  type2--> TestClass4 tc4 = tc1.new TestClass4();                   // OuterClass VariableReference (tc1.newTestClass4)
+	 *  
+	 *  OR
+	 *  
+	 *  
+	 *  type 1&2--> TestClass4 tc4 = new TestClass1().new TestClass4();   // OuterClass AnonymousObject (new TestClass1().new TestClass4();)
+	 *  
+	 *  
+	 */
+	
 	public class TestClass4{
 		public TestClass4() {
 			
@@ -27,6 +47,7 @@ public class Agenda3ObjectCreation {
 		//No restruction of object creation of Inner class with in the Inner class
 		//We can Keep object innerClass inside method 
 		public void add() {
+			//keep one Inner class Object in OuterInnerClassClass Object is Good Connectivity
 			TestClass4 tc4 = new TestClass4();
 		}
 	}

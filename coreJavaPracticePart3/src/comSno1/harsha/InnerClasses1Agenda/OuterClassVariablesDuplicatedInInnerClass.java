@@ -41,7 +41,25 @@ public class OuterClassVariablesDuplicatedInInnerClass {
 	}
 	
 	
-	
+	/*
+	 * Agenda-4
+	 * ********
+	 * 
+	 * 1. Can an InnerClass extends any non-abstract class?
+	 * Ans: yes it can extend any non-abstract class & we can call non-abstract method inside InnerClass
+	 * 
+	 * 2. Can an InnerClass extends any abstract class?
+	 * Ans:  yes it can extend any abstract class & abstract mean it as (abstract & non-abstract method) we can do unimplemented method to implemented method inside InnerClass
+	 * 
+	 * 3. Can an InnerClass implement any interface?
+	 * Ans: yes it can implement an interface  & we can do unimplemented method to implemented method inside Inner Class.
+	 * 
+	 * 4. Can we extend any InnerClass by another InnerClass?
+	 * Ans: yes, we can extend any InnerClass by another InnerClass inside same OuterClass
+	 * 
+	 * 5. Can we call innerClasses Outside the OuterClass?
+	 * Ans: yes, we can call innerClass outside the outerClass by using objection creation and access it. 
+	 */
 	
 	public class TestClass5 implements Agenda4Employee{ //can we extend any innerClass by another InnerClass? Yes
 		private int id = 102;
